@@ -6,6 +6,7 @@ authors:
   - family-names: Long
     given-names: Brad
 year: 2026
+url: "https://github.com/xagyg/invariant-agent-py"
 references:
   - type: software
     title: "Invariant Agent 2 (IA2)"

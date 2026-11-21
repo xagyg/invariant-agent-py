@@ -224,6 +224,19 @@ All 117 tests from the C# xUnit suite are ported (`tests/`), plus two interopera
 
 ## Citing
 
+If you use this Python port in your research, please cite it:
+
+```bibtex
+@software{invariantagentpy2026,
+  author  = {Long, Brad},
+  title   = {Invariant Agent 2 (IA2), Python port},
+  year    = {2026},
+  url     = {https://github.com/xagyg/invariant-agent-py}
+}
+```
+
+This is a port of InvariantAgent2; please also cite the reference implementation:
+
 ```bibtex
 @software{invariantagent2026,
   author  = {Long, Brad},
