@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invariant-agent"
+dynamic = ["version"]
+description = "Python port of InvariantAgent2: a reference implementation of the Invariant-Bounded Agent Alignment Model (IBAAM)."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Brad Long" }]
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["agents", "alignment", "governance", "invariants", "IBAAM", "LLM"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+"Reference implementation (C#)" = "https://github.com/xagyg/InvariantAgent2"
+
+[project.scripts]
+invariant-agent = "invariant_agent.__main__:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "invariant_agent._version.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]
+addopts = "-q"
